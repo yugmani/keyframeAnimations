@@ -33,7 +33,7 @@ selectEl.addEventListener("click", function(event){
                         break;
         case "st": scaleTranslate();
                         break;
-        case "wt": skewTranslate();
+        case "ws": skewScale();
                         break;
         default:    break;
     }
@@ -116,13 +116,13 @@ function scaleTranslate() {
     return;
 }
 
-function skewTranslate() {
+function skewScale() {
     displayBlock();
     box9El.style.margin="0 auto";
     box9El.style.display="block";
     // box9El.textContent = "Skew and Translation";
     statusEl.innerHTML = "<h2>Skew and Translation</h2>";
-    box9El.style.animation = "skew-translate 4s infinite";
+    box9El.style.animation = "skew-scale 4s infinite";
     return;
 }
 

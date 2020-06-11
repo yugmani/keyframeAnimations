@@ -247,7 +247,7 @@ html, body {
     }
 }
 
-@keyframes skew-translate {
+@keyframes skew-scale {
     0% {
         transform:rotate(15deg) scale(2, 1) ;
     }

@@ -8,7 +8,7 @@
 * ```transform:translate()```
 * ```transform:skew()```
 * ```transform:scale()```
-* ```@keyframes <animation name> {
+* ``` @keyframes animation-name {
     first {
 
     }
