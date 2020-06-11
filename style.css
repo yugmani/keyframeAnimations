@@ -1,0 +1,266 @@
+html, body {
+    margin:0;
+    padding:0;
+    font-size:20px;
+}
+
+#container {
+    margin:0 auto;
+    background-color:lightgray;
+    justify-content: center;
+    height:100vh;
+    padding:20px;
+}
+
+#status-animation {
+    text-transform:uppercase;
+}
+
+#animations {
+    font-size:25px;
+    border:none;
+    outline:none;
+    background-color:white;
+    color:black;
+    padding:10px;
+    border-radius:15px;
+}
+
+#boxes {
+    margin:50px;
+    padding:20px;
+}
+
+#box1 {
+    background-color:brown;
+    margin:0 auto;
+    width:600px;
+    height:300px;
+    display:none;
+    border-radius:15px;
+}
+
+#box2, #box5, #box7, #box9 {
+    background-color:blue;
+    width:100px;
+    height:100px;
+    margin:20px;
+    padding:50px;
+    display:none;
+    text-align:center;
+    color:white;
+}
+
+#box3, #box8 {
+    background-color:yellow;
+    width:200px;
+    height:200px;
+    margin:20px;
+    padding:15px;
+    /* animation:translate-animation 4s infinite; */
+    display:none;
+    /* margin: 0 auto; */
+    margin-top:100px;
+    padding:10px;
+    border-radius:50%;
+}
+
+#box4,  #box6 {
+    background-color:green;
+    width:200px;
+    height:200px;
+    margin:20px;
+    padding:15px;
+    border-radius:50%;
+    /* animation:background-animation 4s infinite; */
+    display:none;
+}
+
+@keyframes rotate-animation {
+    0% {
+        transform:rotate(10deg);;
+    }
+
+    15% {
+        transform:rotate(20deg);;
+    }
+    25% {
+        transform:rotate(30deg);;
+    }
+    40% {
+        transform:rotate(45deg);;
+    }
+    55% {
+        transform:rotate(90deg);;
+    }
+
+    70% {
+        transform:rotate(180deg);
+    }
+
+    85% {
+        transform:rotate(270deg);
+    }
+
+    100% {
+        transform:rotate(360deg);
+    }
+
+    
+}
+
+@keyframes translate-animation {
+    0% {
+        transform:translate(0px, 0px);
+    }
+
+    30% {
+        transform:translate(400px, 0px);
+    }
+
+    65% {
+        transform:translate(800px, 0px);  
+    }
+
+    100% {
+        transform:translate(1200px, 0px);
+    }
+}
+
+@keyframes background-animation {
+    0% {
+        background-color:gray;
+    }
+
+    30% {
+        background-color:green;
+    }
+
+    65% {
+        background-color:red;
+    }
+
+    100% {
+        background-color:yellow;
+    }
+
+    
+}
+
+@keyframes scale-animation {
+    0% {
+        
+        transform:scale(1, 1);
+    }
+
+    30% {
+       
+        transform:scale(2, 2);
+    }
+
+    65% {
+        
+        transform:scale(3, 3);
+    }
+
+    100% {
+       
+        transform:scale(4, 4);
+    }
+}
+
+@keyframes skew-animation {
+    0% {
+        transform: skewX(25deg);
+    }
+
+    30% {
+        transform: skewY(25deg);
+    }
+
+    65% {
+        transform: skew(25deg, 25deg);
+    }
+
+    100% {
+        transform: skew(180deg, 360deg);
+    }
+}
+
+@keyframes translate-background {
+    0% {
+        transform:translate(0px, 0px);
+        background-color:red;
+    }
+
+    30% {
+        transform:translate(400px, 0px);
+        background-color:blue;
+    }
+
+    65% {
+        transform:translate(800px, 0px);
+        background-color:yellow;
+    }
+
+    100% {
+        transform:translate(1200px, 0px);
+        background-color:green;
+    }
+}
+
+
+@keyframes translate-rotation {
+    0% {
+        transform:translate(0px, 0px) rotate(10deg);
+    }
+
+    30% {
+        transform:translate(400px, 0px) rotate(90deg);
+    }
+
+    65% {
+        transform:translate(800px, 0px) rotate(180deg);
+    }
+
+    100% {
+        transform:translate(1200px, 0px) rotate(360deg);
+    }
+}
+
+
+@keyframes translate-scale {
+    0% {
+        transform:translate(0px, 0px) scale(1, 1);
+    }
+
+    30% {
+        transform:translate(400px, 0px) scale(2, 2);
+    }
+
+    65% {
+        transform:translate(800px, 0px) scale(3, 3);
+    }
+
+    100% {
+        transform:translate(1200px, 0px) scale(4, 4);
+    }
+}
+
+@keyframes skew-translate {
+    0% {
+        transform:rotate(15deg) scale(2, 1) ;
+    }
+
+    30% {
+        transform:rotate(90deg) scale(1, 2);
+    }
+
+    65% {
+        transform:rotate(180deg) scale(3, 2);
+    }
+
+    100% {
+        transform:rotate(-180deg) scale(2, 3);
+    }
+}
